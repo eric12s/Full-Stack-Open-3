@@ -48,7 +48,7 @@ app.delete('/api/persons/:id', (req, res) => {
     .catch(error => next(error))
 })
 
-app.post('/api/person', (req, res) => {
+app.post('/api/persons', (req, res) => {
 	const body = req.body
 
 	if (!body || !body.name || !body.number) {
